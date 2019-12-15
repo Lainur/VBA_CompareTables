@@ -1,4 +1,3 @@
-Attribute VB_Name = "MatchTablesModule"
 Option Explicit
 Sub MatchMyTables()
     Dim TableRange1 As Range, TableRange2 As Range, r As Range
@@ -679,7 +678,7 @@ Public Function ConvertDataToPattern(ByVal myVal As String) As String
     myVal = LCase(myVal)
     For i = 1 To Len(myVal)
         myChar$ = Mid(myVal, i, 1)
-        If myChar$ Like "*[abcdefghijklmnopqrstuvwxyz]*" Or myChar$ Like "*[àáâãäæçå¸èêëìíîïğñòóôõ÷øùışÿ]*" Then
+        If myChar$ Like "*[abcdefghijklmnopqrstuvwxyz]*" Or myChar$ Like "*[Ğ°Ğ±Ğ²Ğ³Ğ´Ğ¶Ğ·ĞµÑ‘Ğ¸ĞºĞ»Ğ¼Ğ½Ğ¾Ğ¿Ñ€ÑÑ‚ÑƒÑ„Ñ…Ñ‡ÑˆÑ‰ÑÑÑ]*" Then
             answ$ = answ$ & "c"
         Else
             If myChar$ Like "#" Then
