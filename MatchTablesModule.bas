@@ -624,9 +624,9 @@ mark:
     dtFinish = Time
     dtWork = (dtFinish - t)
     If Minute(dtWork) = 0 Then
-        MsgBox "Обработка сделана за " & Second(dtWork) & " сек. "
+        MsgBox "All done in " & Second(dtWork) & " seconds "
     Else
-        MsgBox "Обработка сделана за " & Minute(dtWork) & " мин. " & Second(dtWork) & " сек. "
+        MsgBox "All done in " & Minute(dtWork) & " min. " & Second(dtWork) & " sec. "
     End If
 End Sub
 Public Sub TurnCalculations_ON()
